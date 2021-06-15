@@ -13,10 +13,30 @@ function preload(){
 function setup() {
   createCanvas(600, 350);
   
+  
+  
+  
+  
+  
 }
 function draw() {
   background(bg);
   
- 
+  spacecraft.addImage(scimg);
+  
+  
+  
+  
+  
+  
+  
+  
+}
+  if(spacecraft.y <= (iss.y+70) && spacecraft.x <= (iss.x-10)){
+    hasDocked = true;
+    textSize(25);
+    fill("white")
+    text("Docking Successful!", 200, 300);
+  }
   drawSprites();
 }
